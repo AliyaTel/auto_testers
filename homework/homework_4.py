@@ -13,23 +13,23 @@
 #print (len(friend["favorite_colors"]),)
 #print (friend["favorite_colors"])
 
-fio = input("Введите ваши данные, в формате: имя, возраст, город")
-print(fio)
-
-parts = fio.split(", ")
-print(parts)
-
-name, age, city = parts
-print(name)
-print(age)
-print(city)
-
-Name_2 = name[:2]
-print(Name_2)
-
-age_2 = int(age[:2])
-print(type(age_2))
-
-city_2 = city.capitalize()
-print(city_2)
-print(f"Привет, {name}! Тебе {age} лет, Ты из города {city}")
+# fio = input("Введите ваши данные, в формате: имя, возраст, город")
+# print(fio)
+#
+# parts = fio.split(", ")
+# print(parts)
+#
+# name, age, city = parts
+# print(name)
+# print(age)
+# print(city)
+#
+# Name_2 = name[:2]
+# print(Name_2)
+#
+# age_2 = int(age[:2])
+# print(type(age_2))
+#
+# city_2 = city.capitalize()
+# print(city_2)
+# print(f"Привет, {name}! Тебе {age} лет, Ты из города {city}")
