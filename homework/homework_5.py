@@ -132,22 +132,21 @@ class Book:
 
 class Fiction(Book):
     def get_info(self):
-        return f"Название {self.title}, Автор {self.author}, Год {self.year}"
+        return f"Название {self.title}, Автор {self.author}, Год {self.year}, Жанр: Fiction"
 
 
 class NonFiction(Book):
     def get_info(self):
-        return f"Название: {self.title}, Автор: {self.author}, Год: {self.year}, Жанр: Non-Fiction"
+        return f"Название {self.title}, Автор {self.author}, Год {self.year}, Жанр: NonFiction"
 
-
-book1 = Fiction("1984", "Джордж Оруэлл", 1949)
-book2 = Fiction("Мастер и Маргарита", "М. Булгаков", 1967)
-book3 = NonFiction("Краткая история времени", "Стивен Хокинг", 1988)
-book4 = NonFiction("Самая большая тайна", "Дэвид Айк", 1999)
-
-books = [book1, book2, book3, book4]
-
+books = [
+    Fiction("1984", "Джордж Оруэлл", 1949),
+    Fiction("Мастер и Маргарита", "Михаил Булгаков", 1967),
+    NonFiction("Краткая история времени", "Стивен Хокинг", 1988),
+    NonFiction("Самый богатый человек в Вавилоне", "Джордж Клейсон", 1926)
+]
 for book in books:
     print(book.get_info())
+
 
 
