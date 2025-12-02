@@ -1,4 +1,3 @@
-
 import pytest
 from utils import get_max, get_min, get_average
 
