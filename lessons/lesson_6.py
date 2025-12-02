@@ -49,3 +49,17 @@ def post_a_post():
 all_posts()
 post_a_post()
 
+
+def get_coordinates():
+    url = 'https://geocoding-api.open-meteo.com/v1/search'
+    param = {
+        'name': 'Moscow',
+        'count': 1
+    }
+    response = requests.get(url, params=param)
+    data = response.json()
+    print(data['results'][0]['name'])
+
+
+get_coordinates()
+

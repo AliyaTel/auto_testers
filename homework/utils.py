@@ -1,5 +1,4 @@
-import requests
-import json
+
 
 def get_max(numbers):
     if not numbers:
