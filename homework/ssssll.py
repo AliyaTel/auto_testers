@@ -38,7 +38,7 @@ def driver():
 def test_email_field(driver):
     driver.get("https://www.qa-practice.com/elements/input/email")
 
-    email_input = driver.find_element(By.ID, "page-container")
+    email_input = driver.find_element(By.ID, "id_text_string")
     valid_email = "user@example.com"
 
     email_input.send_keys(valid_email)
