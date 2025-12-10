@@ -107,3 +107,4 @@ def get_facts():
     print(facts)
 
 get_facts()
+
