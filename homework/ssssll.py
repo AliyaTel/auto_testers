@@ -47,5 +47,3 @@ def test_email_field(driver):
     assert result.text == valid_email
 
 
-
-
