@@ -32,8 +32,33 @@ def test_find_by_id(driver):
     assert text_result.text == text_test
 
 
+def test_by_tagname(driver):
+    driver.get('https://www.qa-practice.com/elements/input/simple')
+    assert driver.find_element(By.TAG_NAME, 'h1').text == 'Input field'
 
 
+def test_by_link(driver):
+    driver.get('https://www.qa-practice.com/elements/input/simple')
+    link_text = driver.find_element(By.LINK_TEXT, 'Contact')
+    assert link_text.text == 'Contact'
+
+
+def test_by_partial_link(driver):
+    driver.get('https://www.qa-practice.com/elements/input/simple')
+    link_text = driver.find_element(By.LINK_TEXT, 'Contact')
+    assert link_text.text == 'Contact'
+
+
+def test_css_selector(driver):
+    driver.get('https://www.qa-practice.com/elements/input/simple')
+    text_input = driver.find_element(By.CSS_SELECTOR, '#id_email')
+    text_input.send_keys('lalala')
+
+
+def test_xpath(driver):
+    driver.get('https://www.qa-practice.com/elements/input/simple')
+    text_input = driver.find_element(By.XPATH, '//*[@placeholder="Submit me"]')
+    text_input.send_keys('lalala')
 
 
 

@@ -7,6 +7,7 @@ from selenium.webdriver.common.keys import Keys
 driver = webdriver.Chrome()
 driver.maximize_window()
 
+
 @pytest.fixture()
 def driver():
     browser = webdriver.Chrome()
@@ -33,12 +34,10 @@ def driver():
 #     assert text_result.text == text_test
 
 
-
-
 def test_email_field(driver):
     driver.get("https://www.qa-practice.com/elements/input/email")
 
-    email_input = driver.find_element(By.ID, "id_text_string")
+    email_input = driver.find_element(By.ID, "id_email")
     valid_email = "user@example.com"
 
     email_input.send_keys(valid_email)
