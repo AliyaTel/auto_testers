@@ -122,33 +122,33 @@ from operator import length_hint, contains
 #     print(line)
 #
 #
-# class Book:
-#     def __init__(self, title, author, year):
-#         self.title = title
-#         self.author = author
-#         self.year = year
-#
-#     def get_info(self):
-#         return f"Название {self.title}, Автор {self.author}, Год {self.year}"
-#
-#
-# class Fiction(Book):
-#     def get_info(self):
-#         return f"Название {self.title}, Автор {self.author}, Год {self.year}, Жанр: Fiction"
-#
-#
-# class NonFiction(Book):
-#     def get_info(self):
-#         return f"Название {self.title}, Автор {self.author}, Год {self.year}, Жанр: NonFiction"
-#
-# books = [
-#     Fiction("1984", "Джордж Оруэлл", 1949),
-#     Fiction("Мастер и Маргарита", "Михаил Булгаков", 1967),
-#     NonFiction("Краткая история времени", "Стивен Хокинг", 1988),
-#     NonFiction("Самый богатый человек в Вавилоне", "Джордж Клейсон", 1926)
-# ]
-# for book in books:
-#     print(book.get_info())
+class Book:
+    def __init__(self, title, author, year):
+        self.title = title
+        self.author = author
+        self.year = year
+
+    def get_info(self):
+        return f"Название {self.title}, Автор {self.author}, Год {self.year}"
+
+
+class Fiction(Book):
+    def get_info(self):
+        return f"Название {self.title}, Автор {self.author}, Год {self.year}, Жанр: Fiction"
+
+
+class NonFiction(Book):
+    def get_info(self):
+        return f"Название {self.title}, Автор {self.author}, Год {self.year}, Жанр: NonFiction"
+
+books = [
+    Fiction("1984", "Джордж Оруэлл", 1949),
+    Fiction("Мастер и Маргарита", "Михаил Булгаков", 1967),
+    NonFiction("Краткая история времени", "Стивен Хокинг", 1988),
+    NonFiction("Самый богатый человек в Вавилоне", "Джордж Клейсон", 1926)
+]
+for book in books:
+    print(book.get_info())
 
 
 

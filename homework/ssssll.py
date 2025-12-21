@@ -16,7 +16,7 @@ def driver():
     browser = webdriver.Chrome()
     browser.maximize_window()
     yield browser
-    sleep(100)
+    sleep(30)
 
 def test_find_by_name(driver):
     driver.get("https://www.google.com/?hl=ru")
@@ -51,6 +51,15 @@ def test_find_by_css_selector(driver):
     transport_select = Select(select_element)
     transport_select.select_by_value("2")
     assert transport_select.first_selected_option.is_selected()
+
+
+
+
+
+
+
+
+
 
 
 
