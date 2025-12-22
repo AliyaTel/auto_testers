@@ -95,7 +95,7 @@ import json
 #
 
 
-def get_facts():
+def test_get_facts():
     url = "https://catfact.ninja/fact"
 
     fact_1 = requests.get(url).json().get("fact")

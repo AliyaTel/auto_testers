@@ -19,6 +19,20 @@ def test_2(page:Page):
     sleep(5)
 
 
+def test_3(page:Page):
+    page.goto('https://demoqa.com/text-box')
+    page.locator('[id="userEmail"]').fill("jjjjj888@gmail.com")
+    sleep(5)
+
+
+def test_4(page:Page):
+    page.goto('https://demoqa.com/text-box')
+    page.locator('[id="currentAddress"]').fill("bishkekcity")
+    sleep(10)
+
+
+
+
 
 
 
