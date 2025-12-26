@@ -1,3 +1,5 @@
+from itertools import count
+
 import requests
 
 # secretNumber = 7
@@ -160,4 +162,19 @@ def all_posts():
     assert len (response) == 100
 
 all_posts()
+
+
+def task_level():
+    count = int(input("Ввод значения?"))
+    if count > 10:
+        return "Срочно спать"
+    elif 6 <= count <= 10:
+        return "Можно сериал"
+    else:
+        return "бодрячок"
+
+print(task_level())
+
+
+
 
